@@ -1,0 +1,21 @@
+{
+	"info": {
+		"action": "Next",
+		"access": 0,
+		"try": 1,
+		"index": 1,
+		"sequence": 1,
+		"element": "questionnaire"
+	},
+	"answers": {
+		"mazza": 1
+	},
+	"timestamps_start": [
+		1610630527.819
+	],
+	"timestamps_end": [
+		1610630589.146
+	],
+	"timestamps_elapsed": 61.32699990272522,
+	"accesses": 1
+}

@@ -1,0 +1,398 @@
+{
+	"task": {
+		"task_id": "ProgettoSocial2",
+		"batch_name": "Batch-1",
+		"worker_id": "MMYDJJPOBJ",
+		"unit_id": "unit_3",
+		"token_input": "MMYDJJPOBJ",
+		"token_output": "MMNUYBKBYJ",
+		"tries_amount": 8,
+		"questionnaire_amount": 2,
+		"documents_amount": 3,
+		"dimensions_amount": 7
+	},
+	"questionnaires": [
+		{
+			"index": 0,
+			"description": null,
+			"type": "standard",
+			"questions": [
+				{
+					"index": 0,
+					"name": "sesso",
+					"text": "Di quale sesso sei?",
+					"answers": [
+						"Maschio",
+						"Femmina",
+						"Non binario",
+						"Preferisco non dirlo",
+						"Altro"
+					],
+					"detail": null,
+					"showDetail": false
+				},
+				{
+					"index": 1,
+					"name": "tipologia",
+					"text": "Qual è la modalità di lettura che preferisci?",
+					"answers": [
+						"Digitale",
+						"Cartaceo"
+					],
+					"detail": null,
+					"showDetail": false
+				},
+				{
+					"index": 2,
+					"name": "genere",
+					"text": "Qual è il tuo genere letterario preferito?",
+					"answers": [
+						"Fantasy",
+						"Giallo",
+						"Thriller",
+						"Romanzo",
+						"Avventura",
+						"Rosa",
+						"Altro"
+					],
+					"detail": null,
+					"showDetail": false
+				},
+				{
+					"index": 3,
+					"name": "preferenze",
+					"text": "Cosa preferisci leggere?",
+					"answers": [
+						"Giornali",
+						"Libri",
+						"Fumetti",
+						"Altro"
+					],
+					"detail": null,
+					"showDetail": false
+				},
+				{
+					"index": 4,
+					"name": "giorni",
+					"text": "Quanto leggi a settimana?",
+					"answers": [
+						"Mai",
+						"Da uno a tre giorni",
+						"Da quattro a sei giorni",
+						"Ogni giorno"
+					],
+					"detail": null,
+					"showDetail": false
+				},
+				{
+					"index": 5,
+					"name": "tempo",
+					"text": "Quando leggi, quanto tempo dedichi a quest'attività?",
+					"answers": [
+						"5min",
+						"10min",
+						"30min",
+						"1 ora",
+						"Più di 1 ora"
+					],
+					"detail": null,
+					"showDetail": false
+				}
+			]
+		},
+		{
+			"index": 1,
+			"description": null,
+			"type": "crt",
+			"questions": [
+				{
+					"index": 0,
+					"name": "mazza",
+					"text": "Martedì Luca è andato al negozio sportivo e ha comprato una mazza da baseball e una palla, spendendo 11.00€ in totale. Nel pomeriggio, invece, ha deciso di giocare 2 ore al parco con Matteo, amico esperto di baseball. Se la mazza di Luca costa 10.00€ in più della palla, quanto costa la palla?",
+					"answers": [],
+					"detail": null,
+					"showDetail": false
+				}
+			]
+		}
+	],
+	"documents": [
+		{
+			"index": 0,
+			"nome": "To Kill a Mockingbird",
+			"autore": "Harper Lee",
+			"editore": "Warner Books",
+			"pagine": "376",
+			"prezzo": "10.88$",
+			"anno": "1982",
+			"copertina": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1339392178l/37449.jpg"
+		},
+		{
+			"index": 1,
+			"nome": "The Picture of Dorian Gray",
+			"autore": "Oscar Wilde",
+			"editore": "Penguin Classics",
+			"pagine": "253",
+			"prezzo": "11.76$",
+			"anno": "2003",
+			"copertina": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454087681l/489732._SY475_.jpg"
+		},
+		{
+			"index": 2,
+			"nome": "Gulliver's Travels",
+			"autore": "Jonathan Swift",
+			"editore": "Penguin",
+			"pagine": "306",
+			"prezzo": "8.98$",
+			"anno": "2003",
+			"copertina": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427829692l/7733.jpg"
+		}
+	],
+	"dimensions": [
+		{
+			"index": 0,
+			"name": "Acquisteresti questo libro?",
+			"description": null,
+			"justification": null,
+			"url": null,
+			"scale": {
+				"type": "categorical",
+				"mappings": [
+					{
+						"index": 0,
+						"label": "Sì",
+						"description": "Lo comprerò",
+						"value": "1"
+					},
+					{
+						"index": 1,
+						"label": "No",
+						"description": "Non lo comprerò",
+						"value": "-1"
+					}
+				]
+			},
+			"goldQuestionCheck": null,
+			"style": {
+				"type": "list",
+				"position": "top",
+				"orientation": "vertical",
+				"separator": null
+			}
+		},
+		{
+			"index": 1,
+			"name": "Possiedi già questo libro, anche di un'altra edizione?",
+			"description": null,
+			"justification": null,
+			"url": null,
+			"scale": {
+				"type": "categorical",
+				"mappings": [
+					{
+						"index": 0,
+						"label": "Sì",
+						"description": "Lo possiedo",
+						"value": "1"
+					},
+					{
+						"index": 1,
+						"label": "No",
+						"description": "Non lo possiedo",
+						"value": "-1"
+					}
+				]
+			},
+			"goldQuestionCheck": null,
+			"style": {
+				"type": "list",
+				"position": "top",
+				"orientation": "vertical",
+				"separator": null
+			}
+		},
+		{
+			"index": 2,
+			"name": "Hai letto altri libri di questo autore?",
+			"description": null,
+			"justification": null,
+			"url": null,
+			"scale": {
+				"type": "categorical",
+				"mappings": [
+					{
+						"index": 0,
+						"label": "Sì",
+						"description": "Ne ho letti",
+						"value": "1"
+					},
+					{
+						"index": 1,
+						"label": "No",
+						"description": "Non ne ho letti",
+						"value": "-1"
+					}
+				]
+			},
+			"goldQuestionCheck": null,
+			"style": {
+				"type": "list",
+				"position": "top",
+				"orientation": "vertical",
+				"separator": null
+			}
+		},
+		{
+			"index": 3,
+			"name": "Il prezzo ti sembra adeguato?",
+			"description": null,
+			"justification": null,
+			"url": null,
+			"scale": {
+				"type": "categorical",
+				"mappings": [
+					{
+						"index": 0,
+						"label": "Sì",
+						"description": "E' adeguato",
+						"value": "1"
+					},
+					{
+						"index": 1,
+						"label": "No",
+						"description": "Non è adeguato",
+						"value": "-1"
+					}
+				]
+			},
+			"goldQuestionCheck": null,
+			"style": {
+				"type": "list",
+				"position": "top",
+				"orientation": "vertical",
+				"separator": null
+			}
+		},
+		{
+			"index": 4,
+			"name": "Indica quanto ti sembra adeguato",
+			"description": "0 = 'Totalmente non adeguato' - 10 = 'Totalmente adeguato'",
+			"justification": null,
+			"url": null,
+			"scale": {
+				"type": "interval",
+				"min": 0,
+				"max": 10,
+				"step": 1
+			},
+			"goldQuestionCheck": null,
+			"style": {
+				"type": "list",
+				"position": "middle",
+				"orientation": "vertical",
+				"separator": null
+			}
+		},
+		{
+			"index": 5,
+			"name": "Che impressione hai di questa edizione",
+			"description": null,
+			"justification": {
+				"text": "",
+				"minWords": 9
+			},
+			"url": null,
+			"scale": null,
+			"goldQuestionCheck": null,
+			"style": {
+				"type": "list",
+				"position": "middle",
+				"orientation": "vertical",
+				"separator": null
+			}
+		},
+		{
+			"index": 6,
+			"name": "Quante pagine ha questo libro?",
+			"description": null,
+			"justification": {
+				"text": "",
+				"minWords": 0
+			},
+			"url": null,
+			"scale": null,
+			"goldQuestionCheck": null,
+			"style": {
+				"type": "list",
+				"position": "middle",
+				"orientation": "vertical",
+				"separator": null
+			}
+		}
+	],
+	"worker": {
+		"identifier": "MMYDJJPOBJ",
+		"folder": "ProgettoSocial2/Batch-1/Data/MMYDJJPOBJ/",
+		"cloudflareProperties": {
+			"fl": "21f543",
+			"h": "www.cloudflare.com",
+			"ip": "151.95.87.204",
+			"ts": "1610636796.543",
+			"visit_scheme": "https",
+			"uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 Edg/87.0.664.75",
+			"colo": "LHR",
+			"http": "http/2",
+			"loc": "IT",
+			"tls": "TLSv1.3",
+			"sni": "plaintext",
+			"warp": "off",
+			"gateway": "off"
+		},
+		"navigatorProperties": {
+			"productSub": "20030107",
+			"vendor": "Google Inc.",
+			"plugins": {
+				"0": {
+					"0": {}
+				},
+				"1": {
+					"0": {}
+				},
+				"2": {
+					"0": {},
+					"1": {}
+				}
+			},
+			"mimeTypes": {
+				"0": {},
+				"1": {},
+				"2": {},
+				"3": {}
+			},
+			"appCodeName": "Mozilla",
+			"appName": "Netscape",
+			"appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 Edg/87.0.664.75",
+			"platform": "Win32",
+			"product": "Gecko",
+			"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 Edg/87.0.664.75",
+			"language": "it",
+			"languages": [
+				"it",
+				"it-IT",
+				"en",
+				"en-GB",
+				"en-US"
+			]
+		},
+		"ngxDeviceDetectorProperties": {
+			"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 Edg/87.0.664.75",
+			"os": "Windows",
+			"browser": "MS-Edge-Chromium",
+			"device": "Unknown",
+			"os_version": "windows-10",
+			"browser_version": "87.0.664.75",
+			"deviceType": "desktop",
+			"orientation": "landscape"
+		}
+	}
+}

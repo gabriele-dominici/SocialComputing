@@ -1,0 +1,282 @@
+{
+	"info": {
+		"action": "Finish",
+		"access": 1,
+		"try": 1,
+		"index": 4,
+		"sequence": 8,
+		"element": "document"
+	},
+	"questionnaires_answers": [
+		{
+			"sesso": "0",
+			"tipologia": "1",
+			"genere": "4",
+			"preferenze": "1",
+			"giorni": "1",
+			"tempo": "2"
+		},
+		{
+			"mazza": 1
+		}
+	],
+	"documents_answers": [
+		{
+			"Acquisteresti questo libro?_value": "-1",
+			"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
+			"Hai letto altri libri di questo autore?_value": "-1",
+			"Il prezzo ti sembra adeguato?_value": "1",
+			"Indica quanto ti sembra adeguato_value": 9,
+			"Che impressione hai di questa edizione_justification": "Non riesco a capire di cosa parla a guardare la copertina",
+			"Quante pagine ha questo libro?_justification": "324"
+		},
+		{
+			"Acquisteresti questo libro?_value": "-1",
+			"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
+			"Hai letto altri libri di questo autore?_value": "-1",
+			"Il prezzo ti sembra adeguato?_value": "-1",
+			"Indica quanto ti sembra adeguato_value": 3,
+			"Che impressione hai di questa edizione_justification": "Sembra un libro molto serio, forse anche un po' troppo",
+			"Quante pagine ha questo libro?_justification": "248"
+		},
+		{
+			"Acquisteresti questo libro?_value": "-1",
+			"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
+			"Hai letto altri libri di questo autore?_value": "-1",
+			"Il prezzo ti sembra adeguato?_value": "1",
+			"Indica quanto ti sembra adeguato_value": 7,
+			"Che impressione hai di questa edizione_justification": "Non riesco a capire di cosa parli il libro, ne dal titolo ne dalla copertina",
+			"Quante pagine ha questo libro?_justification": "324"
+		}
+	],
+	"notes": [
+		[],
+		[],
+		[]
+	],
+	"dimensions_selected": [
+		{
+			"data": [
+				{
+					"dimension": 0,
+					"index": 0,
+					"timestamp": 1610645959.173,
+					"value": "-1"
+				},
+				{
+					"dimension": 1,
+					"index": 1,
+					"timestamp": 1610645960.292,
+					"value": "-1"
+				},
+				{
+					"dimension": 2,
+					"index": 2,
+					"timestamp": 1610645961.994,
+					"value": "-1"
+				},
+				{
+					"dimension": 3,
+					"index": 3,
+					"timestamp": 1610645967.838,
+					"value": "1"
+				},
+				{
+					"dimension": 4,
+					"index": 4,
+					"timestamp": 1610645969.605,
+					"value": 8
+				},
+				{
+					"dimension": 4,
+					"index": 5,
+					"timestamp": 1610645970.404,
+					"value": 10
+				},
+				{
+					"dimension": 4,
+					"index": 6,
+					"timestamp": 1610645971.204,
+					"value": 9
+				}
+			],
+			"amount": 7
+		},
+		{
+			"data": [
+				{
+					"dimension": 0,
+					"index": 0,
+					"timestamp": 1610646011.961,
+					"value": "-1"
+				},
+				{
+					"dimension": 1,
+					"index": 1,
+					"timestamp": 1610646013.468,
+					"value": "-1"
+				},
+				{
+					"dimension": 2,
+					"index": 2,
+					"timestamp": 1610646016.41,
+					"value": "-1"
+				},
+				{
+					"dimension": 3,
+					"index": 3,
+					"timestamp": 1610646017.75,
+					"value": "-1"
+				},
+				{
+					"dimension": 4,
+					"index": 4,
+					"timestamp": 1610646019.558,
+					"value": 4
+				},
+				{
+					"dimension": 4,
+					"index": 5,
+					"timestamp": 1610646020.599,
+					"value": 3
+				}
+			],
+			"amount": 6
+		},
+		{
+			"data": [
+				{
+					"dimension": 0,
+					"index": 0,
+					"timestamp": 1610646121.622,
+					"value": "-1"
+				},
+				{
+					"dimension": 1,
+					"index": 1,
+					"timestamp": 1610646124.942,
+					"value": "-1"
+				},
+				{
+					"dimension": 2,
+					"index": 2,
+					"timestamp": 1610646126.215,
+					"value": "-1"
+				},
+				{
+					"dimension": 4,
+					"index": 3,
+					"timestamp": 1610646132.309,
+					"value": 7
+				},
+				{
+					"dimension": 3,
+					"index": 4,
+					"timestamp": 1610646132.766,
+					"value": "1"
+				}
+			],
+			"amount": 5
+		}
+	],
+	"timestamps_start": [
+		[
+			1610645855
+		],
+		[
+			1610645896.095
+		],
+		[
+			1610645930.423,
+			1610646096.154
+		],
+		[
+			1610646004.293,
+			1610646098.449
+		],
+		[
+			1610646111.228
+		]
+	],
+	"timestamps_end": [
+		[
+			1610645896.095
+		],
+		[
+			1610645930.423
+		],
+		[
+			1610646004.293,
+			1610646098.449
+		],
+		[
+			1610646096.154,
+			1610646111.228
+		],
+		[
+			1610646168.443
+		]
+	],
+	"timestamps_elapsed": [
+		41.09500002861023,
+		34.32800006866455,
+		76.16499972343445,
+		104.64000010490417,
+		57.21500015258789
+	],
+	"countdowns_times": [],
+	"countdowns_expired": [
+		false,
+		false,
+		false
+	],
+	"accesses": [
+		1,
+		1,
+		2,
+		2,
+		1
+	],
+	"queries": [
+		{
+			"data": [],
+			"amount": 0
+		},
+		{
+			"data": [],
+			"amount": 0
+		},
+		{
+			"data": [],
+			"amount": 0
+		}
+	],
+	"responses_retrieved": [
+		{
+			"data": [],
+			"amount": 0
+		},
+		{
+			"data": [],
+			"amount": 0
+		},
+		{
+			"data": [],
+			"amount": 0
+		}
+	],
+	"responses_selected": [
+		{
+			"data": [],
+			"amount": 0
+		},
+		{
+			"data": [],
+			"amount": 0
+		},
+		{
+			"data": [],
+			"amount": 0
+		}
+	]
+}

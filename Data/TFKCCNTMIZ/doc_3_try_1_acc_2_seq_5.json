@@ -1,0 +1,84 @@
+{
+	"info": {
+		"action": "Next",
+		"access": 1,
+		"try": 1,
+		"index": 3,
+		"sequence": 5,
+		"element": "document"
+	},
+	"answers": {
+		"Acquisteresti questo libro?_value": "-1",
+		"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
+		"Hai letto altri libri di questo autore?_value": "-1",
+		"Il prezzo ti sembra adeguato?_value": "-1",
+		"Indica quanto ti sembra adeguato_value": 3,
+		"Che impressione hai di questa edizione_justification": "Sembra un libro molto serio, forse anche un po' troppo",
+		"Quante pagine ha questo libro?_justification": "248"
+	},
+	"notes": [],
+	"dimensions_selected": {
+		"data": [
+			{
+				"dimension": 0,
+				"index": 0,
+				"timestamp": 1610646011.961,
+				"value": "-1"
+			},
+			{
+				"dimension": 1,
+				"index": 1,
+				"timestamp": 1610646013.468,
+				"value": "-1"
+			},
+			{
+				"dimension": 2,
+				"index": 2,
+				"timestamp": 1610646016.41,
+				"value": "-1"
+			},
+			{
+				"dimension": 3,
+				"index": 3,
+				"timestamp": 1610646017.75,
+				"value": "-1"
+			},
+			{
+				"dimension": 4,
+				"index": 4,
+				"timestamp": 1610646019.558,
+				"value": 4
+			},
+			{
+				"dimension": 4,
+				"index": 5,
+				"timestamp": 1610646020.599,
+				"value": 3
+			}
+		],
+		"amount": 6
+	},
+	"queries": {
+		"data": [],
+		"amount": 0
+	},
+	"timestamps_start": [
+		1610646004.293,
+		1610646098.449
+	],
+	"timestamps_end": [
+		1610646096.154,
+		1610646111.228
+	],
+	"timestamps_elapsed": 104.64000010490417,
+	"countdowns_times": null,
+	"accesses": 2,
+	"responses_retrieved": {
+		"data": [],
+		"amount": 0
+	},
+	"responses_selected": {
+		"data": [],
+		"amount": 0
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"info": {
+		"action": "Next",
+		"access": 0,
+		"try": 1,
+		"index": 0,
+		"sequence": 0,
+		"element": "questionnaire"
+	},
+	"answers": {
+		"sesso": "0",
+		"tipologia": "1",
+		"genere": "4",
+		"preferenze": "1",
+		"giorni": "1",
+		"tempo": "2"
+	},
+	"timestamps_start": [
+		1610645855
+	],
+	"timestamps_end": [
+		1610645896.095
+	],
+	"timestamps_elapsed": 41.09500002861023,
+	"accesses": 1
+}
