@@ -1,4 +1,14 @@
+library("rjson")
+
 #### CARICAMENTO  DATI####
+list_dir = list.dirs(path = "./Data", full.names = TRUE, recursive = TRUE)
+list_dir = list_dir[2:length(list_dir)]
+
+list_data = list()
+for (dir in list_dir) {
+  a = fromJSON(file = paste(dir, "/data_try_1.json", sep=""))
+  list_data = c(list_data, list(a))
+}
 
 #### CREARE TIBBLE ####
 
