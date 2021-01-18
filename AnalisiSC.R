@@ -1,4 +1,6 @@
 library("rjson")
+library("tidyverse")
+library("ggplot2")
 
 #### CARICAMENTO  DATI####
 list_dir = list.dirs(path = "./Data", full.names = TRUE, recursive = TRUE)
@@ -7,12 +9,115 @@ list_dir = list_dir[2:length(list_dir)]
 list_data = list()
 for (dir in list_dir) {
   a = fromJSON(file = paste(dir, "/data_try_1.json", sep=""))
+  book = fromJSON(file = paste(dir, "/task_data.json", sep=""))
+  print(dir)
+  #a["documents_answers"][[1]][[1]] = c(a["documents_answers"][[1]][[1]], book["documents"][[1]][[1]]["nome"], strsplit(dir, "/")[[1]][3])
+  #a["documents_answers"][[1]][[2]] = c(a["documents_answers"][[1]][[2]], book["documents"][[1]][[2]]["nome"], strsplit(dir, "/")[[1]][3])
+  #a["documents_answers"][[1]][[3]] = c(a["documents_answers"][[1]][[3]], book["documents"][[1]][[3]]["nome"], strsplit(dir, "/")[[1]][3])
+  #a["questionnaires_answers"][[1]][[1]] = c(a["questionnaires_answers"][[1]][[1]], strsplit(dir, "/")[[1]][3])
+  #a["questionnaires_answers"][[1]][[2]] = c(a["questionnaires_answers"][[1]][[2]], strsplit(dir, "/")[[1]][3])
+  #a["timesramps_elapsed"] = list(a["timesramps_elapsed"])[[1]]
   list_data = c(list_data, list(a))
 }
 
 #### CREARE TIBBLE ####
+questionnaires = tibble()
+
+for (input in list_data) {
+  questionnaires = bind_rows(questionnaires, input["questionnaires_answers"][[1]][[1]])
+}
+
+crt = tibble()
+for (input in list_data) {
+  crt = bind_rows(crt, input["questionnaires_answers"][[1]][[2]])
+}
+
+books = tibble()
+for (input in list_data) {
+  books = bind_rows(books, a["documents_answers"][[1]][[1]])
+  books = bind_rows(books, a["documents_answers"][[1]][[2]])
+  books = bind_rows(books, a["documents_answers"][[1]][[3]])
+}
+
+times = tibble()
+for (input in list_data) {
+  times = bind_rows(times, a["timestamps_elapsed"])
+}
 
 #### HIST CON DATI QUESTIONARIO ####
+
+questionnaires[[1]][1] = 1
+questionario1 = questionnaires %>%
+  select(sesso) %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "0", replacement = "Uomo") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "1", replacement = "Donna") %>%
+  ggplot() +
+  geom_bar(aes(sesso)) +
+  ggtitle("Questionario: Genere worker") +
+  ylab("") +
+  xlab("Sesso")
+  
+
+ggsave("questionario1.png")
+
+questionario2 = questionnaires %>%
+  select(tipologia) %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "0", replacement = "Digitale") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "1", replacement = "Cartaceo") %>%
+  ggplot() +
+  geom_bar(aes(tipologia)) +
+  ggtitle("Questionario: Modalità di lettura preferita") +
+  ylab("") +
+  xlab("Modalità")
+
+ggsave("questionario2.png")
+
+questionario3 = questionnaires %>%
+  select(genere) %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "0", replacement = "Fantasy") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "1", replacement = "Giallo") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "2", replacement = "Thriller") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "3", replacement = "Romanzo") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "4", replacement = "Avventura") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "5", replacement = "Rosa") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "6", replacement = "Altro") %>%
+  ggplot() +
+  geom_bar(aes(genere)) +
+  ggtitle("Questionario: Genere letterario preferito") +
+  ylab("") +
+  xlab("Genere")
+  
+ggsave("questionario3.png")
+
+questionario4 = questionnaires %>%
+  select(preferenze) %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "0", replacement = "Giornali") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "1", replacement = "") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "2", replacement = "Thriller") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "3", replacement = "Romanzo") %>%
+  ggplot() +
+  geom_bar(aes(genere)) +
+  ggtitle("Questionario: Genere letterario preferito") +
+  ylab("") +
+  xlab("Genere")
+
+ggsave("questionario3.png")
+
 
 #### CALCOLO MISURE PER LIBRO ####
 # ADEGUATEZZA MEDIA
