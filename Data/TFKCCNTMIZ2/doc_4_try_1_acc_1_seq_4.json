@@ -1,0 +1,82 @@
+{
+	"info": {
+		"action": "Finish",
+		"access": 0,
+		"try": 1,
+		"index": 4,
+		"sequence": 4,
+		"element": "document"
+	},
+	"answers": {
+		"Acquisteresti questo libro?_value": "1",
+		"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
+		"Hai letto altri libri di questo autore?_value": "-1",
+		"Il prezzo ti sembra adeguato?_value": "1",
+		"Indica quanto ti sembra adeguato_value": 9,
+		"Che impressione hai di questa edizione_justification": "Sinceramente non sapevo di cosa trattasse, ma informandomi posso dire che lo comprerei. Soprattutto per la copertina!",
+		"Quante pagine ha questo libro?_justification": "324"
+	},
+	"notes": [],
+	"dimensions_selected": {
+		"data": [
+			{
+				"dimension": 0,
+				"index": 0,
+				"timestamp": 1610985887.492,
+				"value": "1"
+			},
+			{
+				"dimension": 1,
+				"index": 1,
+				"timestamp": 1610985889.411,
+				"value": "-1"
+			},
+			{
+				"dimension": 2,
+				"index": 2,
+				"timestamp": 1610985893.379,
+				"value": "-1"
+			},
+			{
+				"dimension": 3,
+				"index": 3,
+				"timestamp": 1610985895.925,
+				"value": "1"
+			},
+			{
+				"dimension": 4,
+				"index": 4,
+				"timestamp": 1610985897.661,
+				"value": 6
+			},
+			{
+				"dimension": 4,
+				"index": 5,
+				"timestamp": 1610985903.317,
+				"value": 9
+			}
+		],
+		"amount": 6
+	},
+	"queries": {
+		"data": [],
+		"amount": 0
+	},
+	"timestamps_start": [
+		1610985874.038
+	],
+	"timestamps_end": [
+		1610985939.177
+	],
+	"timestamps_elapsed": 65.13899993896484,
+	"countdowns_times": null,
+	"accesses": 1,
+	"responses_retrieved": {
+		"data": [],
+		"amount": 0
+	},
+	"responses_selected": {
+		"data": [],
+		"amount": 0
+	}
+}

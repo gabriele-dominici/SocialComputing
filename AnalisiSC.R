@@ -45,20 +45,21 @@ for (input in list_data) {
 
 #### HIST CON DATI QUESTIONARIO ####
 
-questionnaires[[1]][1] = 1
 questionario1 = questionnaires %>%
   select(sesso) %>%
   mutate_if(is.character,
             stringr::str_replace_all, pattern = "0", replacement = "Uomo") %>%
   mutate_if(is.character,
             stringr::str_replace_all, pattern = "1", replacement = "Donna") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "2", replacement = "Non binario") %>%
   ggplot() +
   geom_bar(aes(sesso)) +
   ggtitle("Questionario: Genere worker") +
   ylab("") +
   xlab("Sesso")
   
-
+questionario1
 ggsave("questionario1.png")
 
 questionario2 = questionnaires %>%
@@ -73,6 +74,7 @@ questionario2 = questionnaires %>%
   ylab("") +
   xlab("Modalità")
 
+questionario2
 ggsave("questionario2.png")
 
 questionario3 = questionnaires %>%
@@ -96,7 +98,8 @@ questionario3 = questionnaires %>%
   ggtitle("Questionario: Genere letterario preferito") +
   ylab("") +
   xlab("Genere")
-  
+
+questionario3
 ggsave("questionario3.png")
 
 questionario4 = questionnaires %>%
@@ -115,6 +118,8 @@ questionario4 = questionnaires %>%
   ylab("") +
   xlab("Tipologia")
 
+
+questionario4
 ggsave("questionario4.png")
 
 questionario5 = questionnaires %>%
@@ -131,6 +136,7 @@ questionario5 = questionnaires %>%
   ylab("") +
   xlab("Giorni")
 
+questionario5
 ggsave("questionario5.png")
 
 questionario6 = questionnaires %>%
@@ -151,6 +157,8 @@ questionario6 = questionnaires %>%
   ylab("") +
   xlab("Minuti")
 
+
+questionario6
 ggsave("questionario6.png")
 
 crt1 = crt %>%
@@ -161,25 +169,53 @@ crt1 = crt %>%
   ylab("") +
   xlab("Risposte")
 
+crt1
 ggsave("crt.png")
-
-
-
 
 #### CALCOLO MISURE PER LIBRO ####
 # ADEGUATEZZA MEDIA
+mean_books = books %>%
+  select(nome, `Indica quanto ti sembra adeguato_value`) %>%
+  group_by(nome) %>%
+  summarise(media = sum(`Indica quanto ti sembra adeguato_value`)/n())
 # MAX
+max_books = books %>%
+  select(nome, `Indica quanto ti sembra adeguato_value`) %>%
+  group_by(nome) %>%
+  summarise(max = max(`Indica quanto ti sembra adeguato_value`))
 # MIN
+min_books = books %>%
+  select(nome, `Indica quanto ti sembra adeguato_value`) %>%
+  group_by(nome) %>%
+  summarise(min = min(`Indica quanto ti sembra adeguato_value`))
 
 #### AGGREGAZIONE TRA LIBRI ####
 # ADEGUATEZZA MEDIA
-# MSE 
+media_all = mean(unlist(mean_books["media"]))
+# MSE
+v_media = rep(media_all, 18)
+mse = mean((v_media - books$`Indica quanto ti sembra adeguato_value`)^2)
 # LIBRO CON ADEGUATEZZA MAX
+max_book = max_books %>%
+  select(nome, max) %>%
+  filter(max == max(max))
 
 #### GIUSTIFICAZIONI ####
 # LUNGHEZZA MEDIA
+giustificazioni = books["Che impressione hai di questa edizione_justification"]
+
+split_giustificazioni = map(giustificazioni, function(x) strsplit(x," "))[[1]]
+len = c()
+for (el in split_giustificazioni){
+  len = c(len, length(el))
+}
+
+mean_length = mean(unlist(len))
+
 # MAX
+max_length = max(unlist(len))
 # MIN
+min_length = min(unlist(len))
 
 #### DESCRIZIONE RISULTATI ####
 # 2 DIM A PIACERE

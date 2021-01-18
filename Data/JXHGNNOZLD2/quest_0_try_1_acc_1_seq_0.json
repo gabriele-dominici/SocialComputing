@@ -9,18 +9,18 @@
 	},
 	"answers": {
 		"sesso": "0",
-		"tipologia": "1",
-		"genere": "2",
-		"preferenze": "2",
-		"giorni": "1",
+		"tipologia": "0",
+		"genere": "0",
+		"preferenze": "1",
+		"giorni": "0",
 		"tempo": "2"
 	},
 	"timestamps_start": [
-		1610639401
+		1610981316
 	],
 	"timestamps_end": [
-		1610639440.112
+		1610981353.653
 	],
-	"timestamps_elapsed": 39.11199998855591,
+	"timestamps_elapsed": 37.65300011634827,
 	"accesses": 1
 }

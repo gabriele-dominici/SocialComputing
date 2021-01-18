@@ -10,43 +10,43 @@
 	"questionnaires_answers": [
 		{
 			"sesso": "0",
-			"tipologia": "1",
-			"genere": "2",
-			"preferenze": "2",
-			"giorni": "1",
+			"tipologia": "0",
+			"genere": "0",
+			"preferenze": "1",
+			"giorni": "0",
 			"tempo": "2"
 		},
 		{
-			"mazza": 1
+			"mazza": 0.5
 		}
 	],
 	"documents_answers": [
 		{
-			"Acquisteresti questo libro?_value": "-1",
+			"Acquisteresti questo libro?_value": "1",
 			"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
 			"Hai letto altri libri di questo autore?_value": "-1",
 			"Il prezzo ti sembra adeguato?_value": "1",
-			"Indica quanto ti sembra adeguato_value": 6,
-			"Che impressione hai di questa edizione_justification": "E' un libro fatto bene illustrato ma poco costoso e pesante",
-			"Quante pagine ha questo libro?_justification": "252"
+			"Indica quanto ti sembra adeguato_value": 8,
+			"Che impressione hai di questa edizione_justification": "La copertina è molto anonima, il prezzo è adatto per un libro in carta stampata di quella lunghezza.",
+			"Quante pagine ha questo libro?_justification": "112"
 		},
 		{
-			"Acquisteresti questo libro?_value": "-1",
+			"Acquisteresti questo libro?_value": "1",
 			"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
 			"Hai letto altri libri di questo autore?_value": "1",
-			"Il prezzo ti sembra adeguato?_value": "-1",
-			"Indica quanto ti sembra adeguato_value": 4,
-			"Che impressione hai di questa edizione_justification": "Sembra sia un libro adatto alla lettura ai bambini e illustrato",
-			"Quante pagine ha questo libro?_justification": "104"
+			"Il prezzo ti sembra adeguato?_value": "1",
+			"Indica quanto ti sembra adeguato_value": 8,
+			"Che impressione hai di questa edizione_justification": "La copertina personalmente non mi piace: trasmette qualcosa che è completamente diverso dal contenuto del libro stesso.\nIl prezzo è adatto.",
+			"Quante pagine ha questo libro?_justification": "211"
 		},
 		{
 			"Acquisteresti questo libro?_value": "1",
 			"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
 			"Hai letto altri libri di questo autore?_value": "-1",
 			"Il prezzo ti sembra adeguato?_value": "1",
-			"Indica quanto ti sembra adeguato_value": 6,
-			"Che impressione hai di questa edizione_justification": "Sembra un libro abbastanza impegnativo ma che secondo me merita di essere letto",
-			"Quante pagine ha questo libro?_justification": "273"
+			"Indica quanto ti sembra adeguato_value": 9,
+			"Che impressione hai di questa edizione_justification": "La copertina mi piace, presenta un'opera d'arte interessante che sembra essere coerente con il conteunto del libro.\nIl prezzo è adatto.",
+			"Quante pagine ha questo libro?_justification": "288"
 		}
 	],
 	"notes": [
@@ -60,32 +60,32 @@
 				{
 					"dimension": 0,
 					"index": 0,
-					"timestamp": 1610639486.128,
-					"value": "-1"
+					"timestamp": 1610981593.981,
+					"value": "1"
 				},
 				{
 					"dimension": 1,
 					"index": 1,
-					"timestamp": 1610639489.702,
+					"timestamp": 1610981595.202,
 					"value": "-1"
 				},
 				{
 					"dimension": 2,
 					"index": 2,
-					"timestamp": 1610639491.801,
+					"timestamp": 1610981596.721,
 					"value": "-1"
 				},
 				{
 					"dimension": 3,
 					"index": 3,
-					"timestamp": 1610639495.718,
+					"timestamp": 1610981597.988,
 					"value": "1"
 				},
 				{
 					"dimension": 4,
 					"index": 4,
-					"timestamp": 1610639501.577,
-					"value": 6
+					"timestamp": 1610981602.965,
+					"value": 8
 				}
 			],
 			"amount": 5
@@ -95,124 +95,124 @@
 				{
 					"dimension": 0,
 					"index": 0,
-					"timestamp": 1610639607.303,
-					"value": "-1"
+					"timestamp": 1610981672.863,
+					"value": "1"
 				},
 				{
 					"dimension": 1,
 					"index": 1,
-					"timestamp": 1610639608.583,
+					"timestamp": 1610981674.09,
 					"value": "-1"
 				},
 				{
 					"dimension": 2,
 					"index": 2,
-					"timestamp": 1610639613.664,
+					"timestamp": 1610981675.533,
 					"value": "1"
 				},
 				{
 					"dimension": 3,
 					"index": 3,
-					"timestamp": 1610639619.197,
-					"value": "-1"
+					"timestamp": 1610981677.237,
+					"value": "1"
 				},
 				{
 					"dimension": 4,
 					"index": 4,
-					"timestamp": 1610639622.671,
-					"value": 3
+					"timestamp": 1610981694.326,
+					"value": 6
 				},
 				{
 					"dimension": 4,
 					"index": 5,
-					"timestamp": 1610639624.71,
-					"value": 4
+					"timestamp": 1610981696.794,
+					"value": 7
+				},
+				{
+					"dimension": 4,
+					"index": 6,
+					"timestamp": 1610981698.632,
+					"value": 8
 				}
 			],
-			"amount": 6
+			"amount": 7
 		},
 		{
 			"data": [
 				{
 					"dimension": 0,
 					"index": 0,
-					"timestamp": 1610639726.558,
+					"timestamp": 1610981758.809,
 					"value": "1"
 				},
 				{
 					"dimension": 1,
 					"index": 1,
-					"timestamp": 1610639727.974,
-					"value": "1"
-				},
-				{
-					"dimension": 1,
-					"index": 2,
-					"timestamp": 1610639729.124,
+					"timestamp": 1610981759.807,
 					"value": "-1"
 				},
 				{
 					"dimension": 2,
-					"index": 3,
-					"timestamp": 1610639732.85,
+					"index": 2,
+					"timestamp": 1610981760.466,
 					"value": "-1"
 				},
 				{
 					"dimension": 3,
-					"index": 4,
-					"timestamp": 1610639734.656,
+					"index": 3,
+					"timestamp": 1610981765.666,
 					"value": "1"
 				},
 				{
 					"dimension": 4,
-					"index": 5,
-					"timestamp": 1610639743.735,
-					"value": 6
+					"index": 4,
+					"timestamp": 1610981767.299,
+					"value": 9
 				}
 			],
-			"amount": 6
+			"amount": 5
 		}
 	],
 	"timestamps_start": [
 		[
-			1610639401
+			1610981316
 		],
 		[
-			1610639440.112
+			1610981353.653
 		],
 		[
-			1610639470.82
+			1610981564.132
 		],
 		[
-			1610639600.016
+			1610981667.096
 		],
 		[
-			1610639714.328
+			1610981743.846
 		]
 	],
 	"timestamps_end": [
 		[
-			1610639440.112
+			1610981353.653
 		],
 		[
-			1610639470.82
+			1610981564.132
 		],
 		[
-			1610639600.016
+			1610981667.096
 		],
 		[
-			1610639714.328
+			1610981743.846
 		],
 		[
-			1610639801.561
+			1610981800.42
 		]
 	],
 	"timestamps_elapsed": [
-		39.11199998855591,
-		30.70799994468689,
-		129.19600009918213,
-		114.31200003623962,
-		87.23300004005432
+		37.65300011634827,
+		210.47899985313416,
+		102.96399998664856,
+		76.75,
+		56.574000120162964
 	],
 	"countdowns_times": [],
 	"countdowns_expired": [

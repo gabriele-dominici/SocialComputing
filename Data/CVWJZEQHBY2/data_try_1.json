@@ -9,15 +9,15 @@
 	},
 	"questionnaires_answers": [
 		{
-			"sesso": "0",
+			"sesso": "1",
 			"tipologia": "1",
-			"genere": "2",
-			"preferenze": "2",
+			"genere": "0",
+			"preferenze": "1",
 			"giorni": "1",
-			"tempo": "2"
+			"tempo": "3"
 		},
 		{
-			"mazza": 1
+			"mazza": 0.5
 		}
 	],
 	"documents_answers": [
@@ -26,8 +26,8 @@
 			"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
 			"Hai letto altri libri di questo autore?_value": "-1",
 			"Il prezzo ti sembra adeguato?_value": "1",
-			"Indica quanto ti sembra adeguato_value": 6,
-			"Che impressione hai di questa edizione_justification": "E' un libro fatto bene illustrato ma poco costoso e pesante",
+			"Indica quanto ti sembra adeguato_value": 10,
+			"Che impressione hai di questa edizione_justification": "La storia non mi ispira, per questo non lo comprerei, ma le altre caratteristiche sono buone. La copertina non è un granché, ma non giudico quello in un libro",
 			"Quante pagine ha questo libro?_justification": "252"
 		},
 		{
@@ -35,17 +35,17 @@
 			"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
 			"Hai letto altri libri di questo autore?_value": "1",
 			"Il prezzo ti sembra adeguato?_value": "-1",
-			"Indica quanto ti sembra adeguato_value": 4,
-			"Che impressione hai di questa edizione_justification": "Sembra sia un libro adatto alla lettura ai bambini e illustrato",
+			"Indica quanto ti sembra adeguato_value": 5,
+			"Che impressione hai di questa edizione_justification": "considero questa edizione troppo costa, sia valutando il numero di pagine, sia prendendo in considerazione che questa è una storia conosciuta da tutti, quindi non ha nemmeno quel valore aggiunto per comprare una storia sconosciuta che si può godere dalla prima pagina. Sarei disposta a pagare massimo 5/6 euro. Per dieci comprerei un'edizione speciale al massimo",
 			"Quante pagine ha questo libro?_justification": "104"
 		},
 		{
-			"Acquisteresti questo libro?_value": "1",
-			"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
+			"Acquisteresti questo libro?_value": "-1",
+			"Possiedi già questo libro, anche di un'altra edizione?_value": "1",
 			"Hai letto altri libri di questo autore?_value": "-1",
-			"Il prezzo ti sembra adeguato?_value": "1",
-			"Indica quanto ti sembra adeguato_value": 6,
-			"Che impressione hai di questa edizione_justification": "Sembra un libro abbastanza impegnativo ma che secondo me merita di essere letto",
+			"Il prezzo ti sembra adeguato?_value": "-1",
+			"Indica quanto ti sembra adeguato_value": 5,
+			"Che impressione hai di questa edizione_justification": "Non prenderei questa edizioni perché leggermente troppo costosa, la mia edizione è costata 4/5 euro, per il resto è un buon libro, copertina bruttina",
 			"Quante pagine ha questo libro?_justification": "273"
 		}
 	],
@@ -60,32 +60,32 @@
 				{
 					"dimension": 0,
 					"index": 0,
-					"timestamp": 1610639486.128,
+					"timestamp": 1610985668.991,
 					"value": "-1"
 				},
 				{
 					"dimension": 1,
 					"index": 1,
-					"timestamp": 1610639489.702,
+					"timestamp": 1610985708.419,
 					"value": "-1"
 				},
 				{
 					"dimension": 2,
 					"index": 2,
-					"timestamp": 1610639491.801,
+					"timestamp": 1610985712.131,
 					"value": "-1"
 				},
 				{
 					"dimension": 3,
 					"index": 3,
-					"timestamp": 1610639495.718,
+					"timestamp": 1610985717.563,
 					"value": "1"
 				},
 				{
 					"dimension": 4,
 					"index": 4,
-					"timestamp": 1610639501.577,
-					"value": 6
+					"timestamp": 1610985719.901,
+					"value": 10
 				}
 			],
 			"amount": 5
@@ -95,79 +95,91 @@
 				{
 					"dimension": 0,
 					"index": 0,
-					"timestamp": 1610639607.303,
+					"timestamp": 1610985990.42,
+					"value": "1"
+				},
+				{
+					"dimension": 0,
+					"index": 1,
+					"timestamp": 1610985998.804,
 					"value": "-1"
 				},
 				{
 					"dimension": 1,
-					"index": 1,
-					"timestamp": 1610639608.583,
+					"index": 2,
+					"timestamp": 1610986001.92,
 					"value": "-1"
 				},
 				{
 					"dimension": 2,
-					"index": 2,
-					"timestamp": 1610639613.664,
+					"index": 3,
+					"timestamp": 1610986004.65,
 					"value": "1"
 				},
 				{
 					"dimension": 3,
-					"index": 3,
-					"timestamp": 1610639619.197,
+					"index": 4,
+					"timestamp": 1610986028.278,
 					"value": "-1"
 				},
 				{
 					"dimension": 4,
-					"index": 4,
-					"timestamp": 1610639622.671,
+					"index": 5,
+					"timestamp": 1610986042.312,
 					"value": 3
 				},
 				{
 					"dimension": 4,
-					"index": 5,
-					"timestamp": 1610639624.71,
+					"index": 6,
+					"timestamp": 1610986043.13,
 					"value": 4
+				},
+				{
+					"dimension": 4,
+					"index": 7,
+					"timestamp": 1610986044.649,
+					"value": 5
 				}
 			],
-			"amount": 6
+			"amount": 8
 		},
 		{
 			"data": [
 				{
 					"dimension": 0,
 					"index": 0,
-					"timestamp": 1610639726.558,
-					"value": "1"
+					"timestamp": 1610986553.765,
+					"value": "-1"
 				},
 				{
 					"dimension": 1,
 					"index": 1,
-					"timestamp": 1610639727.974,
+					"timestamp": 1610986554.963,
 					"value": "1"
 				},
 				{
-					"dimension": 1,
-					"index": 2,
-					"timestamp": 1610639729.124,
-					"value": "-1"
-				},
-				{
 					"dimension": 2,
-					"index": 3,
-					"timestamp": 1610639732.85,
+					"index": 2,
+					"timestamp": 1610986560.844,
 					"value": "-1"
 				},
 				{
 					"dimension": 3,
+					"index": 3,
+					"timestamp": 1610986565.689,
+					"value": "-1"
+				},
+				{
+					"dimension": 4,
 					"index": 4,
-					"timestamp": 1610639734.656,
-					"value": "1"
+					"timestamp": 1610986566.667,
+					"value": 4
 				},
 				{
 					"dimension": 4,
 					"index": 5,
-					"timestamp": 1610639743.735,
-					"value": 6
+					"timestamp": 1610986567.19,
+					"value": 5
 				}
 			],
 			"amount": 6
@@ -175,44 +187,44 @@
 	],
 	"timestamps_start": [
 		[
-			1610639401
+			1610985285
 		],
 		[
-			1610639440.112
+			1610985332.265
 		],
 		[
-			1610639470.82
+			1610985526.476
 		],
 		[
-			1610639600.016
+			1610985983.437
 		],
 		[
-			1610639714.328
+			1610986535.151
 		]
 	],
 	"timestamps_end": [
 		[
-			1610639440.112
+			1610985332.265
 		],
 		[
-			1610639470.82
+			1610985526.476
 		],
 		[
-			1610639600.016
+			1610985983.437
 		],
 		[
-			1610639714.328
+			1610986535.151
 		],
 		[
-			1610639801.561
+			1610986826.751
 		]
 	],
 	"timestamps_elapsed": [
-		39.11199998855591,
-		30.70799994468689,
-		129.19600009918213,
-		114.31200003623962,
-		87.23300004005432
+		47.265000104904175,
+		194.21099996566772,
+		456.9609999656677,
+		551.7139999866486,
+		291.59999990463257
 	],
 	"countdowns_times": [],
 	"countdowns_expired": [

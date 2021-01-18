@@ -8,19 +8,19 @@
 		"element": "questionnaire"
 	},
 	"answers": {
-		"sesso": "0",
+		"sesso": "1",
 		"tipologia": "1",
-		"genere": "2",
-		"preferenze": "2",
+		"genere": "0",
+		"preferenze": "1",
 		"giorni": "1",
-		"tempo": "2"
+		"tempo": "3"
 	},
 	"timestamps_start": [
-		1610639401
+		1610985285
 	],
 	"timestamps_end": [
-		1610639440.112
+		1610985332.265
 	],
-	"timestamps_elapsed": 39.11199998855591,
+	"timestamps_elapsed": 47.265000104904175,
 	"accesses": 1
 }

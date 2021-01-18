@@ -1,0 +1,94 @@
+{
+	"info": {
+		"action": "Next",
+		"access": 0,
+		"try": 1,
+		"index": 3,
+		"sequence": 3,
+		"element": "document"
+	},
+	"answers": {
+		"Acquisteresti questo libro?_value": "-1",
+		"Possiedi già questo libro, anche di un'altra edizione?_value": "-1",
+		"Hai letto altri libri di questo autore?_value": "1",
+		"Il prezzo ti sembra adeguato?_value": "-1",
+		"Indica quanto ti sembra adeguato_value": 5,
+		"Che impressione hai di questa edizione_justification": "considero questa edizione troppo costa, sia valutando il numero di pagine, sia prendendo in considerazione che questa è una storia conosciuta da tutti, quindi non ha nemmeno quel valore aggiunto per comprare una storia sconosciuta che si può godere dalla prima pagina. Sarei disposta a pagare massimo 5/6 euro. Per dieci comprerei un'edizione speciale al massimo",
+		"Quante pagine ha questo libro?_justification": "104"
+	},
+	"notes": [],
+	"dimensions_selected": {
+		"data": [
+			{
+				"dimension": 0,
+				"index": 0,
+				"timestamp": 1610985990.42,
+				"value": "1"
+			},
+			{
+				"dimension": 0,
+				"index": 1,
+				"timestamp": 1610985998.804,
+				"value": "-1"
+			},
+			{
+				"dimension": 1,
+				"index": 2,
+				"timestamp": 1610986001.92,
+				"value": "-1"
+			},
+			{
+				"dimension": 2,
+				"index": 3,
+				"timestamp": 1610986004.65,
+				"value": "1"
+			},
+			{
+				"dimension": 3,
+				"index": 4,
+				"timestamp": 1610986028.278,
+				"value": "-1"
+			},
+			{
+				"dimension": 4,
+				"index": 5,
+				"timestamp": 1610986042.312,
+				"value": 3
+			},
+			{
+				"dimension": 4,
+				"index": 6,
+				"timestamp": 1610986043.13,
+				"value": 4
+			},
+			{
+				"dimension": 4,
+				"index": 7,
+				"timestamp": 1610986044.649,
+				"value": 5
+			}
+		],
+		"amount": 8
+	},
+	"queries": {
+		"data": [],
+		"amount": 0
+	},
+	"timestamps_start": [
+		1610985983.437
+	],
+	"timestamps_end": [
+		1610986535.151
+	],
+	"timestamps_elapsed": 551.7139999866486,
+	"countdowns_times": null,
+	"accesses": 1,
+	"responses_retrieved": {
+		"data": [],
+		"amount": 0
+	},
+	"responses_selected": {
+		"data": [],
+		"amount": 0
+	}
+}
