@@ -10,12 +10,12 @@ list_data = list()
 for (dir in list_dir) {
   a = fromJSON(file = paste(dir, "/data_try_1.json", sep=""))
   book = fromJSON(file = paste(dir, "/task_data.json", sep=""))
-  a["documents_answers"][[1]][[1]] = c(a["documents_answers"][[1]][[1]], book["documents"][[1]][[1]]["nome"], strsplit(dir, "/")[[1]][3])
-  a["documents_answers"][[1]][[2]] = c(a["documents_answers"][[1]][[2]], book["documents"][[1]][[2]]["nome"], strsplit(dir, "/")[[1]][3])
-  a["documents_answers"][[1]][[3]] = c(a["documents_answers"][[1]][[3]], book["documents"][[1]][[3]]["nome"], strsplit(dir, "/")[[1]][3])
-  #a["questionnaires_answers"][[1]][[1]] = c(a["questionnaires_answers"][[1]][[1]], strsplit(dir, "/")[[1]][3])
-  #a["questionnaires_answers"][[1]][[2]] = c(a["questionnaires_answers"][[1]][[2]], strsplit(dir, "/")[[1]][3])
-  #a["timesramps_elapsed"] = list(a["timesramps_elapsed"])[[1]]
+  a["documents_answers"][[1]][[1]] = c(a["documents_answers"][[1]][[1]], book["documents"][[1]][[1]]["nome"], book["documents"][[1]][[1]]["anno"])
+  a["documents_answers"][[1]][[2]] = c(a["documents_answers"][[1]][[2]], book["documents"][[1]][[2]]["nome"], book["documents"][[1]][[2]]["anno"])
+  a["documents_answers"][[1]][[3]] = c(a["documents_answers"][[1]][[3]], book["documents"][[1]][[3]]["nome"], book["documents"][[1]][[3]]["anno"])
+  a["questionnaires_answers"][[1]][[1]] = c(a["questionnaires_answers"][[1]][[1]])
+  a["questionnaires_answers"][[1]][[2]] = c(a["questionnaires_answers"][[1]][[2]])
+  a["timesramps_elapsed"] = list(a["timesramps_elapsed"])[[1]]
   list_data = c(list_data, list(a))
 }
 
@@ -33,9 +33,9 @@ for (input in list_data) {
 
 books = tibble()
 for (input in list_data) {
-  books = bind_rows(books, a["documents_answers"][[1]][[1]])
-  books = bind_rows(books, a["documents_answers"][[1]][[2]])
-  books = bind_rows(books, a["documents_answers"][[1]][[3]])
+  books = bind_rows(books, input["documents_answers"][[1]][[1]])
+  books = bind_rows(books, input["documents_answers"][[1]][[2]])
+  books = bind_rows(books, input["documents_answers"][[1]][[3]])
 }
 
 times = tibble()
