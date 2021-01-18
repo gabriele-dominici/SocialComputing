@@ -10,10 +10,9 @@ list_data = list()
 for (dir in list_dir) {
   a = fromJSON(file = paste(dir, "/data_try_1.json", sep=""))
   book = fromJSON(file = paste(dir, "/task_data.json", sep=""))
-  print(dir)
-  #a["documents_answers"][[1]][[1]] = c(a["documents_answers"][[1]][[1]], book["documents"][[1]][[1]]["nome"], strsplit(dir, "/")[[1]][3])
-  #a["documents_answers"][[1]][[2]] = c(a["documents_answers"][[1]][[2]], book["documents"][[1]][[2]]["nome"], strsplit(dir, "/")[[1]][3])
-  #a["documents_answers"][[1]][[3]] = c(a["documents_answers"][[1]][[3]], book["documents"][[1]][[3]]["nome"], strsplit(dir, "/")[[1]][3])
+  a["documents_answers"][[1]][[1]] = c(a["documents_answers"][[1]][[1]], book["documents"][[1]][[1]]["nome"], strsplit(dir, "/")[[1]][3])
+  a["documents_answers"][[1]][[2]] = c(a["documents_answers"][[1]][[2]], book["documents"][[1]][[2]]["nome"], strsplit(dir, "/")[[1]][3])
+  a["documents_answers"][[1]][[3]] = c(a["documents_answers"][[1]][[3]], book["documents"][[1]][[3]]["nome"], strsplit(dir, "/")[[1]][3])
   #a["questionnaires_answers"][[1]][[1]] = c(a["questionnaires_answers"][[1]][[1]], strsplit(dir, "/")[[1]][3])
   #a["questionnaires_answers"][[1]][[2]] = c(a["questionnaires_answers"][[1]][[2]], strsplit(dir, "/")[[1]][3])
   #a["timesramps_elapsed"] = list(a["timesramps_elapsed"])[[1]]
@@ -105,18 +104,66 @@ questionario4 = questionnaires %>%
   mutate_if(is.character,
             stringr::str_replace_all, pattern = "0", replacement = "Giornali") %>%
   mutate_if(is.character,
-            stringr::str_replace_all, pattern = "1", replacement = "") %>%
+            stringr::str_replace_all, pattern = "1", replacement = "Libri") %>%
   mutate_if(is.character,
-            stringr::str_replace_all, pattern = "2", replacement = "Thriller") %>%
+            stringr::str_replace_all, pattern = "2", replacement = "Fumetti") %>%
   mutate_if(is.character,
-            stringr::str_replace_all, pattern = "3", replacement = "Romanzo") %>%
+            stringr::str_replace_all, pattern = "3", replacement = "Altro") %>%
   ggplot() +
-  geom_bar(aes(genere)) +
-  ggtitle("Questionario: Genere letterario preferito") +
+  geom_bar(aes(preferenze)) +
+  ggtitle("Questionario: Preferenze tipologia di libro") +
   ylab("") +
-  xlab("Genere")
+  xlab("Tipologia")
 
-ggsave("questionario3.png")
+ggsave("questionario4.png")
+
+questionario5 = questionnaires %>%
+  select(giorni) %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "0", replacement = "1-3") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "1", replacement = "4-6") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "2", replacement = "7") %>%
+  ggplot() +
+  geom_bar(aes(giorni)) +
+  ggtitle("Questionario: Giorni dedicati a settimana alla lettura") +
+  ylab("") +
+  xlab("Giorni")
+
+ggsave("questionario5.png")
+
+questionario6 = questionnaires %>%
+  select(tempo) %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "0", replacement = "0-4") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "1", replacement = "5-9") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "2", replacement = "10-29") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "3", replacement = "30-59") %>%
+  mutate_if(is.character,
+            stringr::str_replace_all, pattern = "4", replacement = "60+") %>%
+  ggplot() +
+  geom_bar(aes(tempo)) +
+  ggtitle("Questionario: Tempo dedicato ogni volta a questa attività") +
+  ylab("") +
+  xlab("Minuti")
+
+ggsave("questionario6.png")
+
+crt1 = crt %>%
+  select(mazza) %>%
+  ggplot() +
+  geom_bar(aes(mazza)) +
+  ggtitle("CRT - risposta esatta 0.5") +
+  ylab("") +
+  xlab("Risposte")
+
+ggsave("crt.png")
+
+
 
 
 #### CALCOLO MISURE PER LIBRO ####
