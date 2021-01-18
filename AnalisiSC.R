@@ -125,11 +125,11 @@ ggsave("questionario4.png")
 questionario5 = questionnaires %>%
   select(giorni) %>%
   mutate_if(is.character,
-            stringr::str_replace_all, pattern = "0", replacement = "1-3") %>%
+            stringr::str_replace_all, pattern = "3", replacement = "7") %>%
   mutate_if(is.character,
-            stringr::str_replace_all, pattern = "1", replacement = "4-6") %>%
+            stringr::str_replace_all, pattern = "1", replacement = "1-3 giorni") %>%
   mutate_if(is.character,
-            stringr::str_replace_all, pattern = "2", replacement = "7") %>%
+            stringr::str_replace_all, pattern = "2", replacement = "4-6") %>%
   ggplot() +
   geom_bar(aes(giorni)) +
   ggtitle("Questionario: Giorni dedicati a settimana alla lettura") +
@@ -220,6 +220,9 @@ min_length = min(unlist(len))
 #### DESCRIZIONE RISULTATI ####
 # 2 DIM A PIACERE
 # RISULTATI COMBO APPREZZAMENTO E POSSESSO DEL LIBRO
+books %>%
+  filter(`Il prezzo ti sembra adeguato?_value` == "-1" & `Hai letto altri libri di questo autore?_value` == "1")
+
 # RISULTATI COMBO APPREZZAMENTO E LETTURA DELL'AUTORE
 
 ###############################################################################
@@ -228,4 +231,4 @@ min_length = min(unlist(len))
 # AGGREGARE RISU QUEST CON DATI SUI LIBRI
 # ANALISI DELLE RISPOSTE CON CODICE FRANCESCHET (SENTIMENT ANALYSIS)
 # ANALISI TEMPI PER RISPOSTA
-# CRT
+
